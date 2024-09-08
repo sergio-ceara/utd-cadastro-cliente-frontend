@@ -5,6 +5,7 @@ export async function getCliente(id){
 }
 
 export async function getClientes(){
+    console.log("getClientes:",(await api.get("/clientes")).config)
     return await api.get("/clientes").then(response=>response);
 }
 
