@@ -1,16 +1,12 @@
+// api.js
 import axios from 'axios';
 
-//baseURL:"http://localhost:8080/api"
-//baseURL:"http://192.168.3.10:8080/api"
-//baseURL
-//const baseURL = "http://192.168.3.10:8080/api"; // URL base da API
-
-//const baseFront = "http://192.168.3.10:5173"
-//baseURL:"http://192.168.3.10:8080/api"
-const baseFront = "https://utd-cadastro-cliente-frontend.vercel.app"
-
+// Criação da instância do Axios com a base URL da API
 const api = axios.create({
-    baseURL:"https://utdcadastro-clientebackend-production.up.railway.app/api"
+    baseURL: import.meta.env.VITE_API_BASE_URL // A URL base para as chamadas da API
 });
-export {baseFront};
+
+// Exportação da URL base do frontend
+export const baseFront = import.meta.env.VITE_NEXT_PUBLIC_BASE_FRONT;
+
 export default api;
