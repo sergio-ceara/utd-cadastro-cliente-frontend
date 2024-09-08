@@ -12,7 +12,7 @@ function Home() {
                 <div className={styles.linkContainer}>
                         <label>
                             <FaUser className={styles.icon}/>
-                            <a href={`${baseFront}/cliente/view`} className={styles.link}>Cadastro de clientes</a>
+                            <Link to="/cliente/view" className={styles.link}>Cadastro de clientes</Link>                            
                         </label>
                 </div>            
             </div>
