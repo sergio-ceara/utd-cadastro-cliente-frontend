@@ -1,0 +1,139 @@
+.container {
+    padding: 1%;
+}
+
+.botaoIncluirInicio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 1%;
+}
+
+.incluirCliente {
+    padding: 10px 20px;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+.paginaInicial {
+    padding: 1%;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: gray;
+}
+.paginaInicial:hover {
+    background-color: #ff0800;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0%;
+}
+
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 150%;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th.id, td.id {
+    width: 4%;
+    text-align: right;
+}
+
+th.nome, td.nome {
+    width: 30%;
+}
+
+th.email, td.email {
+    width: 30%;
+}
+
+th.idade, td.idade {
+    width: 1%;
+    text-align: center;
+}
+th.idade, th.edicao, td.edicao {
+    width: 5%;
+    text-align: center;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffcc00;
+    font-size: 80%;
+}
+
+.iconButton:hover {
+    color: #0056b3;
+    background-color: #ddd;
+}
+
+/* Definindo a visibilidade da tabela e dos blocos */
+@media (min-width: 769px) {
+    /* Exibe a tabela em telas maiores */
+    table {
+        display: table;
+    }
+
+    /* Oculta o bloco de cliente em telas maiores */
+    .cliente {
+        display: none;
+    }
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    /* Oculta a tabela padrão */
+    table {
+        display: none;
+    }
+
+    /* Exibe os dados dos clientes como um bloco */
+    .cliente {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .cliente h3 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .cliente p {
+        margin: 5px 0;
+    }
+
+    .cliente .actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .cliente .iconButton {
+        font-size: 100%;
+    }
+}

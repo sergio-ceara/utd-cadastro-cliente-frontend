@@ -1,0 +1,65 @@
+.home {
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner de colunas horizontalmente */
+    align-items: top; /* Centraliza o contêiner verticalmente */
+    padding: 10px;
+}
+
+.cliente {
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner de colunas horizontalmente */
+    align-items: top; /* Centraliza o contêiner verticalmente */
+    padding: 10px;
+}
+
+.colunaEsquerda {
+    background-color: #fff; /* Fundo branco para as colunas */
+    padding: 10px; /* Espaço interno das colunas */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin: 0 1px; /* Espaço horizontal entre as colunas */
+}
+
+.colunaDireita {
+    background-color: #fff; /* Fundo branco para as colunas */
+    padding: 10px; /* Espaço interno das colunas */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin: 0 1px; /* Espaço horizontal entre as colunas */
+    align-content: center;
+}
+
+.tituloUm {
+    color: rgb(3, 104, 3);
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+}
+.tituloDois {
+    color: rgb(177, 7, 41);
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo das linhas de texto */
+.line {
+    font-size: 1.0em;
+    margin: 0; /* Remove margens padrão */
+    padding: 10px 0; /* Espaço vertical ao redor do texto */
+}
+
+.link {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+.icon {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 150%;
+    color:rgb(226, 43, 80);
+}

@@ -1,0 +1,150 @@
+/* Ajustes para dispositivos móveis */
+@media (max-width: 576px) {
+    .table thead {
+        display: none;
+    }
+    .table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #181717; /* Adiciona uma borda ao redor do bloco */
+        border-radius: 4px; /* Adiciona bordas arredondadas para um visual mais suave */
+        background-color: #b3abab; /* Fundo de bloco para melhor contraste */
+        padding: 10px;
+        position: relative;
+    }
+
+    .table tbody td {
+        display: flex; /* Usa flexbox para alinhar os itens dentro da célula */
+        justify-content: space-between; /* Distribui os itens de forma a ocupar toda a largura */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
+        font-size: 14px;
+        border-bottom: 1px solid #dee2e6;
+        background-color: #b3abab; /* Fundo branco para as células */
+        padding: 10px;
+        box-sizing: border-box; /* Garante que o padding não afete a largura total */
+        font-weight:bold;
+    }
+
+    .table tbody td::before {
+        content: attr(data-label)":";
+        font-weight: 100;
+        margin-right: 10px;
+        white-space: nowrap; /* Garante que o texto não quebre em múltiplas linhas */
+        left: 0; /* Alinha o pseudo-elemento à esquerda da célula */
+        top: 0; /* Alinha o pseudo-elemento ao topo da célula */
+        width: 120px; /* Largura fixa para garantir alinhamento vertical dos dois pontos */
+        box-sizing: border-box; /* Garante que o padding e border sejam incluídos na largura */
+    }
+    .table tbody .actions {
+        display: flex; /* Usa flexbox para alinhar os botões na mesma linha */
+        gap: 10px; /* Espaçamento entre os botões */
+        justify-content: flex-end; /* Alinha os botões à direita */
+    }
+
+    .table tbody button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #ffcc00;
+        font-size: 14px; /* Ajusta o tamanho da fonte dos ícones para melhor visualização */
+    }
+
+    .table tbody button:hover {
+        color: #0056b3;
+        background-color: #ddd;
+    }
+}
+
+/* Estilos gerais */
+.container {
+    padding: 1%;
+}
+
+.botaoIncluirInicio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 1%;
+}
+
+.incluirCliente {
+    padding: 10px 20px;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+.paginaInicial {
+    padding: 1%;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: gray;
+}
+
+.paginaInicial:hover {
+    background-color: #ff0800;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para a tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0%;
+}
+
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 150%;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th.id, td.id {
+    width: 4%;
+    text-align: right;
+}
+
+th.nome, td.nome {
+    width: 30%;
+}
+
+th.email, td.email {
+    width: 30%;
+}
+
+th.idade, td.idade {
+    width: 1%;
+    text-align: center;
+}
+
+th.idade, th.edicao, td.edicao {
+    width: 5%;
+    text-align: center;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffcc00;
+    font-size: 80%;
+}
+
+.iconButton:hover {
+    color: #0056b3;
+    background-color: #ddd;
+}

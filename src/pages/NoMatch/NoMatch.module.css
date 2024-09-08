@@ -1,0 +1,30 @@
+.containerNoMatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .linha1NoMatch {
+    color: red;
+    font-size: 300%;
+  }
+  
+  .linha2NoMatch {
+    color:#034c10;
+    font-size: 190%;
+  }
+  
+  .linha3NoMatch {
+    color: #007bff;
+    font-size: 240%;
+    text-decoration: none;
+  }
+  
+  .linha3NoMatch:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: red;
+  }
+  

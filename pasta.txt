@@ -1,0 +1,4 @@
+
+HKEY_CURRENT_USER\software\microsoft\windows\currentversion\explorer\shell folders
+    personal    REG_SZ    D:\meus documentos_desenvolvimento\Documents
+
